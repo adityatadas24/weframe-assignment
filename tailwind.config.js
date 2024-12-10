@@ -11,7 +11,13 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        playfair: ['"Playfair Display"', 'serif',],
+        cabinet:['"Cabinet Grotesk"','serif',] // Add Playfair Display as a custom font
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide')
+  ],
 };
